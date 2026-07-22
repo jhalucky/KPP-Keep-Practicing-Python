@@ -4,6 +4,6 @@ import numpy as np
 # print(f)
 # print(type(f))
 
-f = np.arange(1,10,3)
+f = np.arange(1,13).reshape(4,3)
 print(f)
 print(type(f))
