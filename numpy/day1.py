@@ -15,3 +15,13 @@ import numpy as np
 
 # g = np.zeros((2,3))
 # print(g)
+
+
+# f = np.random.random((3,4))
+# print(f)
+
+# f = np.linspace(10,-10,10)
+# print(f)
+
+f = np.identity(5)
+print(f)
