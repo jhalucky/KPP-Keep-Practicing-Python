@@ -36,7 +36,26 @@ import numpy as np
 
 # Boolean indexing
 
-a = np.random.randint(1,100,36).reshape(4,9)
-print(a)
+# a = np.arange(12).reshape(4,3)
+# b = np.arange(3).reshape(3)
+# print(a)
 
-print(a > 50)
+# print(a > 50)
+
+# print(a[a>50])
+
+# print(a[(a%2==0) & (a > 50)])
+# print(a[a%7!=0])
+# print(a[a%2==0]) 
+
+# print(b)
+
+# print(a+b)
+
+
+def sigmoid(array):
+    return 1/(1 + np.exp(-(array)))
+
+
+a = np.arange(100)
+print(sigmoid(a))
