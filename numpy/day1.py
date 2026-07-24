@@ -44,4 +44,7 @@ a2 = np.arange(16,32).reshape(8,2)
 # print(np.hstack((a1,a2)))
 # print(np.vstack((a2,a1)))
 
-print(np.hstack((np.vstack((a1,a2)), np.arange(32).reshape(16,2))))
+# print(np.hstack((np.vstack((a1,a2)), np.arange(32).reshape(16,2))))
+
+# print(np.vsplit(a1,2))
+print(np.vsplit(np.stack((a1,a2)), 2))
