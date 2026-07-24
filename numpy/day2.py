@@ -27,7 +27,7 @@ import numpy as np
 # print(sys.getsizeof(a1))
 
 
-# Advance Indexing
+# fancy Indexing
 
 # a1 = np.arange(16).reshape(4,4)
 # print(a1)
@@ -38,3 +38,5 @@ import numpy as np
 
 a = np.random.randint(1,100,36).reshape(4,9)
 print(a)
+
+print(a > 50)
