@@ -62,13 +62,21 @@ import numpy as np
 
 # mean squared error
 
-def mse(actual, predicted):
+# def mse(actual, predicted):
 
-    return np.mean((actual - predicted)**2)
+#     return np.mean((actual - predicted)**2)
 
 
 
-actual = np.random.randint(1,50,25)
-predicted = np.random.randint(1,50,25)
+# actual = np.random.randint(1,50,25)
+# predicted = np.random.randint(1,50,25)
 
-print(mse(actual, predicted))
+# print(mse(actual, predicted))
+
+
+# working with missing values null and nan
+
+a = np.array([2,4,6,8,10,np.nan,34,56])
+# print(a)
+
+print(a[~np.isnan(a)])
