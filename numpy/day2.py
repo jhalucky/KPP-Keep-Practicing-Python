@@ -76,7 +76,19 @@ import numpy as np
 
 # working with missing values null and nan
 
-a = np.array([2,4,6,8,10,np.nan,34,56])
-# print(a)
+# a = np.array([2,4,6,8,10,np.nan,34,56])
+# # print(a)
 
-print(a[~np.isnan(a)])
+# print(a[~np.isnan(a)])
+
+
+# plotting a graph
+import matplotlib
+matplotlib.use("TkAgg")
+import matplotlib.pyplot as plt
+
+x = np.linspace(-10,10,100)
+y = x
+
+plt.plot(x,y)
+plt.show()
