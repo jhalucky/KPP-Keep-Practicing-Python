@@ -4,7 +4,7 @@ import numpy as np
 # print(f)
 # print(type(f))
 
-# f = np.arange(1,13).reshape(4,3)
+# f = np.arange(16).reshape(2,2,2,2)
 # print(f)
 # print(type(f))
 
@@ -23,5 +23,25 @@ import numpy as np
 # f = np.linspace(10,-10,10)
 # print(f)
 
-f = np.identity(5)
-print(f)
+# f = np.identity(5)
+
+# f = np.arange(20).reshape(2,2,5)
+# print(f)
+# print(f.ndim)
+# print(f.shape)
+# print(f.size)
+
+a1 = np.arange(16).reshape(8,2)
+a2 = np.arange(16,32).reshape(8,2)
+# print(np.dot(a1,a2))
+
+# print(a1)
+# print(a2)
+
+# print(a1[1:2,::3])
+# print(a1[2:,1::2])
+
+# print(np.hstack((a1,a2)))
+# print(np.vstack((a2,a1)))
+
+print(np.hstack((np.vstack((a1,a2)), np.arange(32).reshape(16,2))))
