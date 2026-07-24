@@ -53,9 +53,22 @@ import numpy as np
 # print(a+b)
 
 
-def sigmoid(array):
-    return 1/(1 + np.exp(-(array)))
+# def sigmoid(array):
+#     return 1/(1 + np.exp(-(array)))
 
 
-a = np.arange(100)
-print(sigmoid(a))
+# a = np.arange(100)
+# print(sigmoid(a))
+
+# mean squared error
+
+def mse(actual, predicted):
+
+    return np.mean((actual - predicted)**2)
+
+
+
+actual = np.random.randint(1,50,25)
+predicted = np.random.randint(1,50,25)
+
+print(mse(actual, predicted))
