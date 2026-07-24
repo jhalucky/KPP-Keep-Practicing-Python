@@ -94,5 +94,8 @@ import numpy as np
 # plt.show()
 
 a = np.random.randint(1,100,15)
+b = np.random.randint(1,200,15).reshape(3,5)
 print(a)
 print(np.sort(a))
+print(b)
+print(np.sort(b,axis=0))
