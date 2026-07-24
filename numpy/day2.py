@@ -83,12 +83,16 @@ import numpy as np
 
 
 # plotting a graph
-import matplotlib
-matplotlib.use("TkAgg")
-import matplotlib.pyplot as plt
+# import matplotlib
+# matplotlib.use("TkAgg")
+# import matplotlib.pyplot as plt
 
-x = np.linspace(10,-10,100)
-y = 1/(1+np.exp(-x))
+# x = np.linspace(10,-10,100)
+# y = 1/(1+np.exp(-x))
 
-plt.plot(x,y)
-plt.show()
+# plt.plot(x,y)
+# plt.show()
+
+a = np.random.randint(1,100,15)
+print(a)
+print(np.sort(a))
