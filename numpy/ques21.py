@@ -7,5 +7,7 @@ mask = np.isin(a1, a2)
 
 result1 = a1[~mask]
 result2 = a2[~mask]
+
+
 print(result1)
 print(result2)
