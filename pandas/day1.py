@@ -3,7 +3,7 @@ import numpy as np
 # str or object dtype
 # country = ['USA', 'Canada', 'London', 'Kingston', 'Germany']
 
-# print(pd.Series(country))
+# print(pd.Series(country)) we are creating one object of class "Series".
 
 # integer
 # run = [24,56,89,100]
@@ -21,10 +21,25 @@ import numpy as np
 
 marks = {
     'English':100,
-    'Physics':67,
+    'Physics':69,
     'Chemistry':67,
     'Maths':88,
     'Computer Science': 89
 }
 
-print(pd.Series(marks, name="Lucky's Marks"))
+LUCKYsMARKS = pd.Series(marks, name="Lucky's Marks")
+
+
+### Most used attributes in Series class
+
+print(LUCKYsMARKS.size)
+
+print(LUCKYsMARKS.dtype)
+
+print(LUCKYsMARKS.name)
+
+print(LUCKYsMARKS.is_unique)
+
+print(LUCKYsMARKS.index)
+
+print(LUCKYsMARKS.values)
