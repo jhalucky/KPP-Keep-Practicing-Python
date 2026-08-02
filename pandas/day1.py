@@ -12,7 +12,19 @@ import numpy as np
 
 #custom Index
 
-marks = [100, 67, 67, 89, 88]
-subjects = ['English', 'Physics', 'Chemistry', 'Maths', 'Computer Science']
+# marks = [100, 67, 67, 89, 88]
+# subjects = ['English', 'Physics', 'Chemistry', 'Maths', 'Computer Science']
 
-print(pd.Series(marks, index=subjects))
+# print(pd.Series(marks, index=subjects))
+
+#Series from dictionary
+
+marks = {
+    'English':100,
+    'Physics':67,
+    'Chemistry':67,
+    'Maths':88,
+    'Computer Science': 89
+}
+
+print(pd.Series(marks, name="Lucky's Marks"))
