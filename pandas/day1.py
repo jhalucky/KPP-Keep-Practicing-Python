@@ -57,5 +57,11 @@ import numpy as np
 # runs = pd.read_csv("kohli_ipl.csv",index_col='match_no').squeeze()
 # print(runs)
 
+# Head and Tail - prints first five rows or we can pass a by default how many rows we want to see
 movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
-print(movies.tail(10))
+# print(movies.tail(10))
+# print(movies.head())
+
+#sample - takes out one row -"Randomly"
+
+print(movies.sample())
