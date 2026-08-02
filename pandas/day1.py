@@ -64,4 +64,5 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 #sample - takes out one row -"Randomly"
 
-print(movies.sample())
+# print(movies.sample(5))
+print(movies.value_counts())
