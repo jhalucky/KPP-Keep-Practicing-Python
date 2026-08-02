@@ -19,27 +19,40 @@ import numpy as np
 
 #Series from dictionary
 
-marks = {
-    'English':100,
-    'Physics':69,
-    'Chemistry':67,
-    'Maths':88,
-    'Computer Science': 89
-}
+# marks = {
+#     'English':100,
+#     'Physics':69,
+#     'Chemistry':67,
+#     'Maths':88,
+#     'Computer Science': 89
+# }
 
-LUCKYsMARKS = pd.Series(marks, name="Lucky's Marks")
+# LUCKYsMARKS = pd.Series(marks, name="Lucky's Marks")
 
 
 ### Most used attributes in Series class
 
-print(LUCKYsMARKS.size)
+# print(LUCKYsMARKS.size)
 
-print(LUCKYsMARKS.dtype)
+# print(LUCKYsMARKS.dtype)
 
-print(LUCKYsMARKS.name)
+# print(LUCKYsMARKS.name)
 
-print(LUCKYsMARKS.is_unique)
+# print(LUCKYsMARKS.is_unique)
 
-print(LUCKYsMARKS.index)
+# print(LUCKYsMARKS.index)
 
-print(LUCKYsMARKS.values)
+# print(LUCKYsMARKS.values)
+
+# Deal with CSV
+
+## csv with one column
+
+subs = pd.read_csv("/home/lucky/KPP/subs.csv").squeeze()
+print(type(subs))
+print(subs)
+
+##csv with two columns
+
+runs = pd.read_csv("kohli_ipl.csv",index_col='match_no').squeeze()
+print(runs)
