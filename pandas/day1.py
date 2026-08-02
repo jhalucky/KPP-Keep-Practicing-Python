@@ -48,13 +48,13 @@ import numpy as np
 
 ## csv with one column
 
-# subs = pd.read_csv("/home/lucky/KPP/subs.csv").squeeze()
+subs = pd.read_csv("/home/lucky/KPP/subs.csv").squeeze()
 # print(type(subs))
 # print(subs)
 
 ##csv with two columns
 
-# runs = pd.read_csv("kohli_ipl.csv",index_col='match_no').squeeze()
+runs = pd.read_csv("kohli_ipl.csv",index_col='match_no').squeeze()
 # print(runs)
 
 # Head and Tail - prints first five rows or we can pass a by default how many rows we want to see
@@ -65,4 +65,6 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 #sample - takes out one row -"Randomly"
 
 # print(movies.sample(5))
-print(movies.value_counts())
+# print(movies.value_counts())
+
+print(runs.sort_values(ascending=False))
