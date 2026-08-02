@@ -48,11 +48,14 @@ import numpy as np
 
 ## csv with one column
 
-subs = pd.read_csv("/home/lucky/KPP/subs.csv").squeeze()
-print(type(subs))
-print(subs)
+# subs = pd.read_csv("/home/lucky/KPP/subs.csv").squeeze()
+# print(type(subs))
+# print(subs)
 
 ##csv with two columns
 
-runs = pd.read_csv("kohli_ipl.csv",index_col='match_no').squeeze()
-print(runs)
+# runs = pd.read_csv("kohli_ipl.csv",index_col='match_no').squeeze()
+# print(runs)
+
+movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
+print(movies.tail(10))
