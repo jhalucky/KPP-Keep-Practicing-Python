@@ -73,4 +73,9 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 # print(vk.count())
 
-print(subs.sum()) #sum -> sums down all the values
+# print(subs.sum()) #sum -> sums down all the values
+
+print(subs.mean())
+print(subs.median())
+print(subs.std())
+print(movies.mode())
