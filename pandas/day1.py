@@ -75,9 +75,15 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 # print(subs.sum()) #sum -> sums down all the values
 
-print(subs.mean())
-print(subs.median())
-print(subs.std())
-print(movies.mode())
+# print(subs.mean())
+# print(subs.median())
+# print(subs.std())
+# print(movies.mode())
 
-print(vk.var())
+# print(vk.var())
+
+# min and max - gives the minimum and maximum value present in a series
+
+print(subs.min())
+print(subs.max())
+
