@@ -71,4 +71,6 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 # count - gives total number/count of values present in a series
 
-print(vk.count())
+# print(vk.count())
+
+print(subs.sum()) #sum -> sums down all the values
