@@ -79,3 +79,5 @@ print(subs.mean())
 print(subs.median())
 print(subs.std())
 print(movies.mode())
+
+print(vk.var())
