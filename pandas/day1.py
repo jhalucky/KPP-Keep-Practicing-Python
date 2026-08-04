@@ -84,6 +84,10 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 # min and max - gives the minimum and maximum value present in a series
 
-print(subs.min())
-print(subs.max())
+# print(subs.min())
+# print(subs.max())
 
+#describe- provides mean, std, cout, min, max, 25%, 50%, 75% 
+
+print(vk.describe())
+print(subs.describe())
