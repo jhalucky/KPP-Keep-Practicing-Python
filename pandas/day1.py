@@ -109,6 +109,12 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 
 # Editing Series
-print(LUCKYsMARKS)
-LUCKYsMARKS[1] = 100
-print(LUCKYsMARKS)
+# print(LUCKYsMARKS)
+# LUCKYsMARKS[1] = 100
+# print(LUCKYsMARKS)
+
+# LUCKYsMARKS['Physical Educaion'] = 100
+# print(LUCKYsMARKS)
+
+print(vk[vk >= 50].size)
+print(vk[vk == 0])
