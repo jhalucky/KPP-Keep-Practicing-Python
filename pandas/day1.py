@@ -94,8 +94,15 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 #Series Indexing
 
-x = pd.Series([12,2,4,5,89,0,14,23])
-#integer indexing
-print(x[1])
+# x = pd.Series([12,2,4,5,89,0,14,23])
+# #integer indexing
+# print(x[1])
 
 #negative indexing doesn't work here!
+
+print(vk[5:16])
+print(vk[-5:])
+print(movies[-5:])
+print(movies[:5])
+
+print(vk[[1,3,5,7,9]]) #list or fancy indexing
