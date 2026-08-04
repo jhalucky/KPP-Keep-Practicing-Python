@@ -89,5 +89,13 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 #describe- provides mean, std, cout, min, max, 25%, 50%, 75% 
 
-print(vk.describe())
-print(subs.describe())
+# print(vk.describe())
+# print(subs.describe())
+
+#Series Indexing
+
+x = pd.Series([12,2,4,5,89,0,14,23])
+#integer indexing
+print(x[1])
+
+#negative indexing doesn't work here!
