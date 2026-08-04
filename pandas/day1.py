@@ -19,15 +19,15 @@ import numpy as np
 
 #Series from dictionary
 
-# marks = {
-#     'English':100,
-#     'Physics':69,
-#     'Chemistry':67,
-#     'Maths':88,
-#     'Computer Science': 89
-# }
+marks = {
+    'English':100,
+    'Physics':69,
+    'Chemistry':67,
+    'Maths':88,
+    'Computer Science': 89
+}
 
-# LUCKYsMARKS = pd.Series(marks, name="Lucky's Marks")
+LUCKYsMARKS = pd.Series(marks, name="Lucky's Marks")
 
 
 ### Most used attributes in Series class
@@ -100,9 +100,15 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 #negative indexing doesn't work here!
 
-print(vk[5:16])
-print(vk[-5:])
-print(movies[-5:])
-print(movies[:5])
+# print(vk[5:16])
+# print(vk[-5:])
+# print(movies[-5:])
+# print(movies[:5])
 
-print(vk[[1,3,5,7,9]]) #list or fancy indexing
+# print(vk[[1,3,5,7,9]]) #list or fancy indexing
+
+
+# Editing Series
+print(LUCKYsMARKS)
+LUCKYsMARKS[1] = 100
+print(LUCKYsMARKS)
