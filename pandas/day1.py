@@ -116,5 +116,8 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 # LUCKYsMARKS['Physical Educaion'] = 100
 # print(LUCKYsMARKS)
 
-print(vk[vk >= 50].size)
-print(vk[vk == 0])
+# print(vk[vk >= 50].size)
+# print(vk[vk == 0])
+
+num_movies = movies.value_counts()
+print(num_movies[num_movies > 20])
