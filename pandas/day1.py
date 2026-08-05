@@ -121,3 +121,6 @@ movies = pd.read_csv("bollywood.csv",index_col='movie').squeeze()
 
 num_movies = movies.value_counts()
 print(num_movies[num_movies > 20])
+
+
+print(subs.plot())
